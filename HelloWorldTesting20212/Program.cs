@@ -6,7 +6,18 @@ namespace HelloWorldTesting20212
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var utils = new StringUtilities();
+            string texto = Console.ReadLine();
+            bool palindrome = utils.EsPalindrome(texto);
+            if (palindrome)
+            {
+                Console.WriteLine("es palindrome");
+            }
+            else
+            {
+                Console.WriteLine("no es");
+            }
+            
         }
     }
 }
